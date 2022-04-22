@@ -1,0 +1,87 @@
+.container{
+    margin : 130px 200px 50px 200px
+}
+
+    th{
+        background-color: #626262;
+        color: #fff;
+        text-align: center;
+    }
+
+    .title{
+        margin-bottom: 20px;
+    }
+
+    .center{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    
+    .editbox {
+        max-width: 800px;
+        padding: 50px;
+        background: white;
+        box-shadow: 2px 2px 14px 1px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        .registration{
+            text-align: left;
+            padding: 0;
+        }
+    
+        .title{
+            text-align: left;
+        }
+    
+        .form{
+            margin: 20px 0px;
+        }
+    
+        form input{
+            margin: 10px 0px;
+            padding: 20px;
+        }
+    
+        .submit{
+            cursor: pointer;
+        }
+
+        span#edit{
+            display: none;
+        }
+    
+        span{
+            text-decoration: none;
+        }
+    
+        .link{
+            background-color: #626262;
+            padding: 20px;
+            margin: 10px 0px;
+            width: 94%;
+        }
+    
+        .submit span{
+            color: #fff;
+            text-decoration: none;
+            background-color: #626262;
+            width: 100%;
+        }
+    
+        label{
+            text-align: left;
+        }
+    
+        .form{
+            display: flex;
+            flex-direction: column;
+    
+        }
+    
+        .button-container{
+            color : #fff;
+        }

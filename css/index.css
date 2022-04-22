@@ -1,0 +1,216 @@
+.banner {
+	display: flex;
+	align-items: center;
+	margin: 100px 200px 50px 200px;
+}
+
+	.banner .banner-text{
+		text-align: left;
+	}
+
+	.banner .banner-text a{
+		text-decoration: none;
+		color: #fff;
+		background-color: #626262;
+		padding: 16px 24px;
+		border-radius: 2px;
+	}
+
+	.banner .banner-pic img{
+		max-height: 300px;
+	}
+
+.partner {
+	margin: 50px 50px 50px 50px;
+}
+	
+	.partner .title{
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.partner .partner-logo .item img{
+		height: 80px;
+		padding: 10px 24px;
+		margin: 20px 0px;
+		border: #ccc 2px solid;
+	}
+
+.program{
+	padding: 50px 200px 50px 200px;
+	background-color: #eee;
+}
+
+	.program .arrow{
+		text-align: right;
+		margin: 0px 0 20px 0;
+	}
+
+	.program .arrow a{
+		color: #626262;
+		cursor: pointer;
+		margin: 4px;
+	}
+
+	.program .program-text{
+		text-align: left;
+	}
+
+	.program .program-slider{
+		text-align: right;
+		overflow: hidden;
+		transition: all .5s;
+	}
+
+	.program .program-slider a{
+		color: #000;
+	}
+
+	.program .program-slider-01{
+		display: flex;
+		align-items: center;
+		background-color: #fff;
+		padding: 26px 10px;
+		border-radius: 10px;
+	}
+
+	.program .program-slider-01 .images img{
+		height: 170px;
+		width: 170px;
+		object-fit: cover;
+	}
+
+	.program .program-slider:hover{
+		transform: translateY(-10px);
+		box-shadow: 2px 4px 10px 1px #00000017;
+		
+	}
+
+	.program .program-slider .program-slider-text{
+		text-align: left;
+		margin: auto;
+	}
+
+.why-us{
+	padding: 50px 200px 50px 200px;
+}
+
+	.why-us .why-us-text{
+		text-align: center;
+		padding: 10px 100px;
+	}
+
+	.why-us #accordion{
+		text-align: left;
+	}
+
+	.accordion-card{
+		float: left;
+		width: 100%;
+		margin-bottom: -20px;
+	}
+
+	.accordion-card .accordion-header{
+		margin-bottom: -20px;
+	}
+
+	.accordion-card .accordion-header h3{
+		position: relative;
+		color: #000;
+		background-color: #eee;
+		padding: 20px;
+		cursor: pointer;
+	}
+
+	.accordion-card .accor-arrow{
+		transition: .5s;
+	}
+
+	.accordion-card .accordion-header h3 span{
+		position: absolute;
+		right: 20px;
+	}
+
+	.accordion-card .accordion-body{
+		padding: 6px 40px 20px 40px;
+		background-color: #eee;
+		display: none;
+	}
+
+	.accordion-card:nth-child(1) .accordion-body{
+		display: block;
+	}
+
+	.why-us .images img{
+		max-height: 300px;
+		margin-top: 40px;
+	}
+
+	.why-us .second-section{
+		display: flex;
+		align-items: center;
+	}
+
+.testimonials{
+	padding: 50px 200px 50px 200px;	
+}
+
+	.testimonials .first-section{
+		display: flex;
+		align-items: center;
+	}
+
+	.testimonials .title{
+		text-align: left;
+	}
+
+	.testimonials .testi-arrow{
+		text-align: right;
+	}
+
+	.testimonials .testi-arrow a{
+		color: #626262;
+		margin: 0px 4px;
+		cursor: pointer;
+	}
+
+	.testimonials .testi-slides{
+		background: white;
+		margin: 20px 0px;
+		border-radius: 10px;
+		box-shadow: 6px 6px 20px 0px #00000017;
+	}
+
+	.testimonials .testi-slides .text{
+		padding: 20px 40px 0px 40px;
+		text-align: left;
+	}
+
+	.testimonials .testi-slides .text a{
+		color: #000;
+		text-decoration: none;
+	}
+
+	.testimonials .testi-slides .pic{
+		padding: 0px;
+	}
+
+	.testimonials .testi-slides img{
+		max-height: 100%;
+		max-width: 100%;
+		display: block;
+	}
+
+	.testimonials .third-section{
+		text-align: right;
+		padding: 0px 20px 0px 0px;
+	}
+
+	.testimonials .third-section i{
+		padding: 0px 0px 0px 10px;
+	}
+
+	.testimonials .third-section a{
+		color: #000;
+		text-decoration: none;
+	}

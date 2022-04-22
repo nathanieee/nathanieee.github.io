@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Font awesome -->
+	<script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true" ></script>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Local css and js -->
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<script src="js/common.js"></script>
+
+	<!-- Icon -->
+	<link rel="icon" href="images/logo-small.png">
+
+	<!-- TESTI SLIDER -->
+	<script>
+		var slideIndex = 1;
+        displaySlideTesti(slideIndex);
+   
+        function moveSlidesTesti(n) {
+            displaySlideTesti(slideIndex += n);
+			$(".testi-slides").css("display:block");
+        }
+   
+        function activeSlideTesti(n) {
+            displaySlideTesti(slideIndex = n);
+        }
+   
+        /* Main function */
+        function displaySlideTesti(n) {
+            var i;
+            var totalslides = 
+                document.getElementsByClassName("testi-slides");
+              
+            if (n > totalslides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = totalslides.length;
+            }
+            for (i = 0; i < totalslides.length; i++) {
+                totalslides[i].style.display = "none";
+            }
+            totalslides[slideIndex - 1].style.display = "block";
+        }
+	</script>
+
+	<!-- PROGRAM SLIDER -->
+	<script>
+		var slideIndex = 1;
+        displaySlideProgram(slideIndex);
+   
+        function moveSlidesProgram(n) {
+            displaySlideProgram(slideIndex += n);
+			$(".program-slides").css("display:block");
+        }
+   
+        function activeSlideProgram(n) {
+            displaySlideProgram(slideIndex = n);
+        }
+   
+        /* Main function */
+        function displaySlideProgram(n) {
+            var i;
+            var totalslides = 
+                document.getElementsByClassName("program-slider-01");
+              
+            if (n > totalslides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = totalslides.length;
+            }
+            for (i = 0; i < totalslides.length; i++) {
+                totalslides[i].style.display = "none";
+            }
+            totalslides[slideIndex - 1].style.display = "block";
+        }
+	</script>
+
+	<!-- ACCORDION -->
+	<script>
+		$(document).ready(function(){
+			$(".accordion-header").click(function(){
+				if($(this).next(".accordion-body").hasClass("active")){
+					$(this).next(".accordion-body").removeClass("active").slideUp();
+				} else {
+					$(".accordion-card .accordion-body").removeClass("active").slideUp();
+					$(this).next(".accordion-body").addClass("active").slideDown();
+				}
+			})
+		})
+	</script>
+
+	<title>ABC Learning - Homepage</title>
+</head>
+
+<body>
+
+	<!-- HEADER -->
+	<div id="header"></div>
+
+	<!-- BANNER -->
+	<div class="banner row">
+		<div class="banner-text col-lg-6">
+			<h2><strong>Start your programming career now!</strong></h2>
+			<br>
+			<h4>50% off your first purchase.</h4>
+			<br>
+			<br>
+			<a href="courseList.html">Start now!</a>
+		</div>
+		<div class="banner-pic col-lg-6">
+			<img src="images/banner-1.jpg" alt="banner-images">
+		</div>
+	</div>
+
+	<!-- PARTNER -->
+	<div class="partner">
+		<div class="title">
+			<h2><strong>Our partner : </strong></h2>
+		</div>		
+		<div class="partner-logo row">
+			<div class="col-lg-2 item">
+				<img src="images/partner/01.png" alt="">
+				<img src="images/partner/02.png" alt="">
+				<img src="images/partner/03.png" alt="">
+			</div>
+			<div class="col-lg-2 item">
+				<img src="images/partner/04.png" alt="">
+				<img src="images/partner/05.png" alt="">
+				<img src="images/partner/06.png" alt="">
+			</div>
+			<div class="col-lg-2 item">
+				<img src="images/partner/07.png" alt="">
+				<img src="images/partner/08.png" alt="">
+				<img src="images/partner/09.png" alt="">
+			</div>
+			<div class="col-lg-2 item">
+				<img src="images/partner/10.png" alt="">
+				<img src="images/partner/11.png" alt="">
+				<img src="images/partner/12.png" alt="">
+			</div>
+			<div class="col-lg-2 item">
+				<img src="images/partner/13.png" alt="">
+				<img src="images/partner/14.png" alt="">
+				<img src="images/partner/15.png" alt="">
+			</div>
+			<div class="col-lg-2 item">
+				<img src="images/partner/16.png" alt="" style="min-width: 200px;">
+				<img src="images/partner/17.png" alt="">
+				<img src="images/partner/18.png" alt="">
+			</div>
+		</div>
+	</div>
+
+	<!-- OUR PROGRAM -->
+	<div class="program row">
+		<div class="arrow col-lg-12">
+			<a class="previous" onclick="moveSlidesProgram(-1)">
+				<i class="far fa-arrow-alt-circle-left fa-3x"></i>
+			</a>
+			<a class="next" onclick="moveSlidesProgram(1)">
+				<i class="far fa-arrow-alt-circle-right fa-3x"></i>
+			</a>
+		</div>
+
+		<div class="program-text col-lg-4">
+			<h2><strong>Our latest program</strong></h2>
+			<h4>Join our latest program with a new curriculum and establishing connection with our partner. Discount <b>50% off</b> if you bring your friends with you.</h4>
+		</div>
+
+		<div class="col-lg-2"></div>
+
+		<div class="program-slider image-container col-lg-6">
+			<a href="programmingJava.html">
+				<div class="program-slider-01 row">
+					<div class="images col-lg-4">
+						<img src="images/program/programming.jpg" alt="">
+					</div>
+					<div class="program-slider-text col-lg-8">
+						<h5>by ABC Learning center</h5>
+						<h3>Programming in Java</h3>
+						<p>Java programming course is for an adept learner and for developing your critical thinking. Focused mainly as a back-end programmer, and android develpoment.</p>
+					</div>
+				</div>
+			</a>
+			<a href="microsoftOffice.html">
+				<div class="program-slider-01 row" style="display: none;">
+					<div class="images col-lg-4">
+						<img src="images/program/microsoft-office.jpg" alt="">
+					</div>
+					<div class="program-slider-text col-lg-8">
+						<h5>by ABC Learning center</h5>
+						<h3>Microsoft office training</h3>
+						<p>Microsoft office training helps you to understand Microsoft lineups of apps more better, this course include leraning about Microsoft Word, Powerpoint, Excel and Teams.</p>
+					</div>
+				</div>
+			</a>
+		</div>		
+	</div>
+
+	<!-- WHY US -->
+	<div class="why-us">
+		<div class="first-section row">
+			<div class="why-us-text col-lg-12">
+				<h2><strong>Why learn with us?</strong></h2>
+				<p>It's better to choose the best option you can get for the lowest price, and that's why we're here, to give you the best quality for your money. In addition to a budget friendly course, and great module, and a great tutor! </p>
+			</div>
+		</div>
+		
+		<div class="second-section row">
+			<div class="col-lg-6" id="accordion">
+				<div class="accordion-card">
+					<div class="accordion-header">
+						<h3>Global curriculum standart. <span class="fas fa-angle-down accor-arrow"></span></h3>
+					</div>
+					<div class="accordion-body active">
+						The curriculum was developed with company and our partners to fulfill the industrial vacancy in the real world.
+					</div>
+				</div>	
+				<div class="accordion-card">
+					<div class="accordion-header">
+						<h3>Flexible schedule.<span class="fas fa-angle-down accor-arrow"></span></h3>
+					</div>
+					<div class="accordion-body">
+						Pick any day you want, we have it all! Day, noon, or even in the afternoon.
+					</div>
+				</div>
+				<div class="accordion-card">
+					<div class="accordion-header">
+						<h3>Code review from the expert.<span class="fas fa-angle-down accor-arrow"></span></h3>
+					</div>
+					<div class="accordion-body">
+						Validate your program from a 1-on-1 Professional code review that will be given by an adept developer.
+					</div>
+				</div>
+				<div class="accordion-card">
+					<div class="accordion-header">
+						<h3>Thousands of alumni in the industry<span class="fas fa-angle-down accor-arrow"></span></h3>
+					</div>
+					<div class="accordion-body">
+						You will get a certificate that would be useful for proving your knowledge and ability to work in the real environment and in a company.
+					</div>
+				</div>
+			</div>
+
+			<div class="images col-lg-6">
+				<img src="images/why-us.jpg" alt="why us picture">
+			</div>
+		</div>
+		
+	</div>
+
+	<!-- TESTIMONIALS -->
+	<div class="testimonials">
+		<div class="first-section row">
+			<div class="title col-lg-6">
+				<h2><strong>Testimonials</strong></h2>
+			</div>
+			<div class="testi-arrow col-lg-6">
+				<a class="previous" onclick="moveSlidesTesti(-1)">
+					<i class="far fa-arrow-alt-circle-left fa-3x"></i>
+				</a>
+				<a class="next" onclick="moveSlidesTesti(1)">
+					<i class="far fa-arrow-alt-circle-right fa-3x"></i>
+				</a>
+			</div>
+		</div>
+
+		<div class="second-section row">
+			<div class="testi-slider image-container col-lg-12">
+				<div class="testi-slides row">
+					<div class="text col-lg-8">
+						<h4>
+							“What I got from ABC Learning class is a structured learning technique and a great community. Within 2 years, ABC Learning has become one of my mainstays in preparing myself for a career change. Previously a geologist at an oil and gas company, now I'm a lead developer at a national company!” 
+						</h4>
+						<br>
+						<br>
+						<h5>
+							Jane Doe, <br>
+							Software Engineer - <b>Google</b> <br>
+							Programming in Java class
+						</h5>
+						<hr>
+						<a href="#" style="text-align: right;">
+							<h4>
+								<b>Read more</b> <i class="fas fa-arrow-right"></i>
+							</h4>
+						</a>
+					</div>
+					<div class="pic col-lg-4">
+						<img src="images/testimonials/01 - woman.jpg" alt="">
+					</div>
+				</div>
+				<div class="testi-slides row" style="display: none;">
+					<div class="text col-lg-8">
+						<h4>
+							“Relying on college alone is not enough. With ABC Learning, I decided to leave the world of gaming and then learn the world of Android, which turned out to be fun. Number one, ABC Learning teaches work-oriented science. Now it helps me a lot in my career.” 
+						</h4>
+						<br>
+						<br>
+						<br>
+						<br>
+						<h5>
+							Anissa Josie, <br>
+							Andorid Developer - <b>Amazon</b> <br>
+							Programming in Java class
+						</h5>
+						<hr>
+						<h4 style="text-align: right;">
+							<b>Read more</b> <i class="fas fa-arrow-right"></i>
+						</h4>
+					</div>
+					<div class="pic col-lg-4">
+						<img src="images/testimonials/02 - woman.jpg" alt="">
+					</div>
+				</div>
+				<div class="testi-slides row" style="display: none;">
+					<div class="text col-lg-8">
+						<h4>
+							"I used ABC Learning for the last Excel training i had, the training met and exceeded my expectations. ABC Learning went above and beyond before my training day to ensure everything would go smooth on the day of the training. They came prepared with training materials for all levels of experience and adapted the material to my needs as the training went on."
+						</h4>
+						<br>
+						<h5>
+							John Doe, <br>
+							Andorid Developer - <b>NASA</b> <br>
+							microsoft-office training class
+						</h5>
+						<hr>
+						<h4 style="text-align: right;">
+							<b>Read more</b> <i class="fas fa-arrow-right"></i>
+						</h4>
+					</div>
+					<div class="pic col-lg-4">
+						<img src="images/testimonials/03 - man.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="third-section row">
+			<a href="#">
+				<h3>
+					See all <i class="fas fa-external-link-alt"></i>
+				</h3>
+			</a>
+		</div>
+	</div>
+
+	<!-- FOOTER -->
+	<div id="footer"></div>
+</body>
+</html>

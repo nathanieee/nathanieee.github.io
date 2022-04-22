@@ -1,0 +1,56 @@
+<!-- DROPDOWN -->
+<script>
+$(document).ready(function(){
+    $("#dropdown").click(function(){
+        if($("#drop-bottom").hasClass("closed")){
+            $("#drop-bottom").removeClass("closed").addClass("opened").slideDown();
+            $(".dropdown-arrow").css({"transform":"rotate(180deg)"})
+        } else{
+            $("#drop-bottom").addClass("closed").removeClass("opened").slideUp();
+            $(".dropdown-arrow").css({"transform":"rotate(360deg)"})
+        }
+    })
+})
+</script>
+
+<div class="top-nav row">
+    <div class="top-section row col-lg-12">
+        <div class="left-nav col-lg-8">
+            <a href="index.html"><img src="images/logo.png" class="logo"></a>
+            <a href="#" class="dropdown" id="dropdown">
+                Menu <i class="fas fa-angle-down dropdown-arrow"></i>
+            </a>
+        </div>
+        <div class="right-nav col-lg-4 row">
+            <a href="login.html" class="btn-login col-lg-6"><span>Login</span></a>
+            <a href="signup.html" class="btn-signup col-lg-6"><span>Sign-Up</span></a>
+        </div>
+    </div>
+
+    <div class="bottom-section row col-lg-12 closed" id="drop-bottom">
+        <div class="left-section col-lg-5 row">
+            <div class="drop-top col-lg-12">
+                <i class="fas fa-book fa-2x"></i> 
+                <a href="courseList.html">Course List</a> 
+            </div>
+            <div class="drop-bottom col-lg-12">
+                <p>Find a suitable class for you.</p>
+            </div>   
+        </div>
+        <div class="right-section col-lg-7 row">
+            <div class="popular-program col-lg-6 row">
+                <a href="#" class="title col-lg-12">Popular Course</a>
+                <hr>
+                <a href="programmingInJava.html" class="item col-lg-12"><p>Programming in Java</p></a>
+                <a href="microsoftOffice.html" class="item col-lg-12"><p>Microsoft Office</p></a>
+            </div>
+            <div class="blog col-lg-6 row">
+                <a href="#" class="title col-lg-12">ABC Learning</a>
+                <hr>
+                <a href="contactUs.html" class="item col-lg-12"><p>Contact Us</p></a>
+                <a href="aboutUs.html" class="item col-lg-12"><p>About Us</p></a>
+                <a href="privacyPolicy.html" class="item col-lg-12"><p>Privacy Policy</p></a>
+            </div>
+        </div>
+    </div>
+</div>

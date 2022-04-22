@@ -1,0 +1,15 @@
+.center{
+    margin: 220px 200px 150px 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: larger;
+}
+
+h1{
+    margin: 0;
+}
+
+p{
+    margin-top: 20px;
+}

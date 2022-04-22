@@ -1,0 +1,77 @@
+.divider{
+    width: 80%;
+    margin: 50px auto 50px auto;
+}
+
+.vision-mission-container{
+    padding: 100px 200px 50px 200px;
+    background-color: #eee;
+}
+
+    .vision-mission-container .vision{
+        text-align: left;
+    }
+
+    .vision-mission-container .vision h1{
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    .vision-mission-container .mission{
+        text-align: left;
+    }
+
+    .vision-mission-container .mission h1{
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+
+.partner-container{
+    padding: 0px 200px 0px 200px;
+    display: flex;
+    align-items: center;
+}
+
+    .partner-container .partner{
+        text-align: left;
+        padding: 0;
+        padding-right: 50px;
+    }
+
+    .partner-container .partner-logo img{
+        height: 70px;
+        padding: 10px 24px;
+        margin: 10px 0px;
+        border: #ccc 2px solid;
+    }
+
+    .partner-container .partner-video{
+        text-align: right;
+    }
+
+.our-team-container{
+    padding: 0px 200px 50px 200px;
+    text-align: center;
+}
+
+    .our-team-container .member {
+        margin: 20px;
+        border-radius: 10px;
+        width: 330px;
+        padding: 0;
+        text-align: left;
+    }
+
+    .our-team-container .member img{
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        border-radius: 10px;
+        padding: 0;
+    }
+
+    .our-team-container .position{
+        color: #808080;
+    }
